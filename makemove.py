@@ -15,7 +15,7 @@ def make_move(previously_played, board_now):
     #create a list named blank_positions that hold all of the positions of board_now that are empty
     j = 0
     blank_positions = []
-    for i in board_now:
+    for i in board_now[:9]:
         if i == ' ':
             blank_positions.append(j)
         j = j + 1
